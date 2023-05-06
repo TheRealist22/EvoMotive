@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body class="Ferrari">
+    <video id="background-video" autoplay loop muted poster="">
+        <source src="Ferrari/ferrari.mp4" type="video/mp4">
+    </video>
+    <section class="hidden">
+        <h1><img src="Ferrari/Ferrari.png"></h1>
+        <h2>Models</h2>
+    </section>
+
+    <section class="hidden">
+        <h1><img src="Ferrari/LaFerrari.png"></h1>
+        <h2 class="container">
+            The LaFerrari is on of the three revolutionary cars of the holy trinity which pushed the limit with the help of hybrid assistance which help in overcoming the shortcomings 
+            of the internal combustion engine.
+        </h2>
+    </section>
+
+    <section class="hidden">
+        <div>
+            <img class="Photos" src="Ferrari/laferrari-1.jpg">
+            <img class="Photos" src="Ferrari/laferrari-2.jpg">
+            <button  onclick="plusDivs(-1)">&#10094;</button>
+            <button  onclick="plusDivs(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="hidden">
+        <h4>
+            <hr><strong>SPECIFICATIONS</strong><hr>
+        </h4>
+        <table>
+            <tbody>
+                <tr>
+                    <th scope="row">Engine</th>
+                    <td>
+                        6.3 Litre V12 with a 160 Kw Electric Motor
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Transmission</th>
+                    <td>
+                        7-Speed Dual Clutch 
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Horsepower</th>
+                    <td>
+                        950 HP (combined)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Torque</th>
+                    <td>
+                        516 lb-ft
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Top Speed</th>
+                    <td>
+                        218 Mph
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-link"><a href="/">Home</a> </li>
+                <li class="nav-link"><a href="">Back to top</a> </li>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: absolute;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: purple;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+.navbar{
+    width: 95%;
+    margin: auto;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding{
+    font-size: 2rem;
+}
+
+.home, .about, .contact{
+    height: 720px;
+    margin-top: 70px;
+
+}
+
+
+.about, .contact{
+    margin-top: 0;
+}
+@media(max-width: 1280px) {
+    .container{
+        width: 100%;
+    }
+}
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.box{
+    display: grid;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: px;
+    background-color: white;
+    color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+  /* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+  
+/* Rotate last bar */
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
